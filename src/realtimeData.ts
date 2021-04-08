@@ -34,7 +34,6 @@ io.on('connection', (client) => {
 
    // Client subscription event
    client.on('subscribeToRatesUpdate', () => {
-      console.log('Client connected');
       updateTradeRates();
       setInterval(updateTradeRates, 15000);
    });
